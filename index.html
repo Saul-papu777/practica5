@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Abel Saúl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        label {
+            font-size: 14px;
+            margin: 10px 0 5px;
+            display: block;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #89ddf4;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #89ddf4;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #89ddf4;
+            color: black;
+            margin-top: 40px;
+            border-top: 2px solid #fff;
+        }
+        footer img {
+            width: 150px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body background="img/fondo.jpg">
+    <div class="container">
+        <h1>Formulario de Atención Veterinaria</h1>
+        <form action="#" method="POST">
+            <!-- Datos del propietario -->
+            <div class="form-section">
+                <label for="nombrePropietario">Nombre del Propietario:</label>
+                <input type="text" id="nombrePropietario" name="nombrePropietario" required>
+            </div>
+
+            <div class="form-section">
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-section">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Datos del animal -->
+            <div class="form-section">
+                <label for="nombreAnimal">Nombre del Animal:</label>
+                <input type="text" id="nombreAnimal" name="nombreAnimal" required>
+            </div>
+
+            <div class="form-section">
+                <label for="especie">Especie:</label>
+                <select id="especie" name="especie" required>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="huron">Huron</option>
+                    <option value="pajaro">Pájaro</option>
+                    <option value="pez">Pez</option>
+                    <option value="reptil">Reptil</option>
+                    <option value="hamster">Hámster</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="edadAnimal">Edad del Animal (años/meses):</label>
+                <input type="number" id="edadAnimal" name="edadAnimal" required>
+            </div>
+
+            <div class="form-section">
+                <label for="fechaConsulta">Fecha de la Consulta:</label>
+                <input type="date" id="fechaConsulta" name="fechaConsulta" required>
+            </div>
+
+            <div class="form-section">
+                <label for="motivoConsulta">Motivo de la Consulta:</label>
+                <textarea id="motivoConsulta" name="motivoConsulta" rows="4" required></textarea>
+            </div>
+
+            <!-- Costo -->
+            <div class="form-section">
+                <label for="costo">Costo de la Consulta:</label>
+                <input type="number" id="costo" name="costo" step="0.01" min="0" required>
+            </div>
+
+            <div class="form-section">
+                <input type="submit" value="Enviar Solicitud">
+            </div>
+        </form>
+    </div>
+
+    <!-- Pie de página con el GIF -->
+    <footer>
+        <p>¡Gracias por confiar en nuestra veterinaria!</p>
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Gif de perro" />
+        <p>&copy; 2025 Veterinaria de Abel Saúl</p>
+    </footer>
+</body>
+</html>
